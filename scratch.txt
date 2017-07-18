@@ -1,0 +1,9 @@
+(define test1
+  (mupllist->racketlist
+   (eval-exp (call (call mupl-mapAddN (int 7))
+                   (racketlist->mupllist 
+                    (list (int 3) (int 4) (int 9)))))))
+                    
+(define (test2)
+  (apair (fun  "test2" "x" (ifgreater (var "x") 2 4 5))
+   (call (var "test2") (const 5))))
